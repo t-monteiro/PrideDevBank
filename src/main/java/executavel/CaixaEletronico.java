@@ -6,7 +6,7 @@ public  class CaixaEletronico {
 		int notas[] = { 100, 50, 20, 10, 2 };
 		int i = 0;
 		int quantidadeDeNotas[] = new int[notas.length]; // enquanto o resto for divisivel pelas notas a divisao
-															// contunua
+															// continua
 		while (valor > 0) {
 			while (valor >= notas[i]) {
 				valor -= notas[i];

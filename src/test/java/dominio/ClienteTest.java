@@ -3,11 +3,14 @@ package dominio;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class ClienteTest extends Validador {
+import util.Validador;
+
+public class ClienteTest {
 	
 	@Test
 	void deveSerPossivelCriarClientePassandoValores() {
-		Cliente cliente = new Cliente("Thais","12345678909");
+		Cliente cliente = new Cliente("Ana","12345678909","alice");
+		
 		
 		String nomeCliente = cliente.getNome();
 		String cpfCorrentista = cliente.getCPF();

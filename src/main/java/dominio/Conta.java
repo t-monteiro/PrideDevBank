@@ -4,12 +4,27 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Conta {
-	String numeroConta;
+	protected int id;
+	protected String numeroConta;
 	protected String numeroAgencia;
 	protected float saldo;
 	protected Cliente cliente;
+
 	protected String chavePix[] = new String[3]; // email, cpf, telefone
 
+	
+	public Conta() {
+		
+	}
+	
+	public Conta(String numeroAgencia, String numeroConta,Cliente cliente, float saldoInicial) {
+		this.numeroAgencia = numeroAgencia;
+		this.numeroConta = numeroConta;
+		this.cliente = cliente;
+		this.saldo = saldoInicial;
+	}
+	
+	
 	public float getSaldo() {
 		return saldo;
 
@@ -18,6 +33,15 @@ public class Conta {
 	public String getChavePix(int pos) {
 		return chavePix[pos];
 	}
+
+	public String getNumeroConta() {
+		return numeroConta;
+	}
+
+	public String getNumeroAgencia() {
+		return numeroAgencia;
+	}
+
 
 	public void adicionarChavePix(String novaChave) {
 
@@ -47,5 +71,10 @@ public class Conta {
 
 		
 	}
+	
+	public Cliente getCliente() {
+		return cliente;
+	}
+
 
 }
