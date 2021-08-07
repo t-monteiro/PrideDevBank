@@ -3,7 +3,7 @@ package dominio;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class ClienteTest {
+public class ClienteTest extends Validador {
 	
 	@Test
 	void deveSerPossivelCriarClientePassandoValores() {
